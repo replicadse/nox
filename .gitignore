@@ -1,0 +1,15 @@
+.data
+.env
+
+# OS
+.DS_Store
+
+# Lang
+## NodeJS
+node_modules
+
+# custom
+dist
+
+## secrets
+.sysconf

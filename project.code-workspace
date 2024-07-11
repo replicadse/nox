@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "root"
+        },
+        {
+            "path": "code/app/server",
+            "name": "code/app/server"
+        },
+    ],
+    "settings": {}
+}

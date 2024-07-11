@@ -1,0 +1,42 @@
+[package]
+name = "app_server"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+openssl = { workspace = true }
+async-trait = { workspace = true }
+tokio = { workspace = true }
+tokio-stream = { workspace = true }
+bytes = { workspace = true }
+mime = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_with = { workspace = true }
+tokio-compat-02 = { workspace = true }
+reqwest = { workspace = true }
+dotenv = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+axum = { workspace = true }
+axum-server = { workspace = true }
+axum-extra = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+uuid = { workspace = true }
+fancy-regex = { workspace = true }
+chrono = { workspace = true }
+anyhow = { workspace = true }
+futures-util = { workspace = true }
+sha2 = { workspace = true }
+base64 = { workspace = true }
+rustls = { workspace = true }
+rustls-native-certs = { workspace = true }
+urlencoding = { workspace = true }
+time = { workspace = true }
+argon2 = { workspace = true }
+rand = { workspace = true }
+nanoid = { workspace = true }
+tokio-tungstenite = { workspace = true }
+hyper = { workspace = true }
