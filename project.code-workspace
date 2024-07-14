@@ -8,6 +8,9 @@
             "path": "code/app/server",
             "name": "code/app/server"
         },
+        {
+            "path": "code/app/client",
+            "name": "code/app/client"
     ],
     "settings": {}
 }

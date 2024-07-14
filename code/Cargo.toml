@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "app/server",
+    "app/client",
 ]
 
 [workspace.metadata.cargo-udeps.ignore]
@@ -13,8 +14,10 @@ normal = [
 openssl = { version = "0.10", features = ["vendored"] }
 tokio-compat-02 = "0.2.0"
 async-trait = "^0.1"
-tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "macros"] }
-tokio-stream = "0.1.14"
+hyper = "1.4.1"
+tokio = { version = "1.38.0", features = ["rt", "rt-multi-thread", "macros"] }
+tokio-stream = "0.1.15"
+tokio-rustls = "0.26.0"
 bytes = "^1.5.0"
 mime = "^0.3.17"
 thiserror = "1.0.57"
@@ -31,7 +34,7 @@ tower-http = { version = "0.5.1", features = [
     "trace",
 ] }
 axum = { version = "0.7.5", features = ["ws", "http2", "multipart"] }
-axum-server = "0.6.0"
+axum-server = { version = "0.6.0", features = ["tls-rustls"] }
 axum-extra = { version = "0.9.2", features = ["cookie-signed", "typed-header"] }
 tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", default-features = false, features = [
@@ -45,14 +48,15 @@ anyhow = "1.0.79"
 futures-util = "0.3.30"
 sha2 = "0.10.8"
 base64 = "0.21.7"
-rustls = "0.22.2"
-rustls-native-certs = "0.7.0"
+rustls = { version = "0.21.12", features = ["tls12"] }
+rustls-native-certs = "0.7.1"
+rustls-pemfile = "2.1.2"
 urlencoding = "2.1.3"
 time = "0.3.34"
 argon2 = "0.5.3"
 rand = "0.8.5"
 nanoid = "0.4.0"
-tokio-tungstenite = "0.23.1"
-hyper = "1.4.1"
+tokio-tungstenite = { version = "0.23.1", features = ["rustls-tls-webpki-roots"] }
+webpki = "0.22.4"
 
 [workspace.dev-dependencies]
