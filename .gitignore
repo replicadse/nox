@@ -13,3 +13,11 @@ dist
 
 ## secrets
 .sysconf
+
+
+## Any certificates and keys
+**.key
+**.crt
+**.pem
+**.csr
+**.srl
